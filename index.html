@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129675553-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129675553-1');
+    </script>
+
+    <title>will robinson</title>
+  </head>
+  <body>
+    <div class="container" id="name">
+      <div class="row">
+        <div class="col-lg-5 col-sm-5 col-xs-5">
+          <h1>Will Robinson</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-3 col-xs-3">
+          <i><h3 style="color: gray;">Student // Arlington, TX</h3></i>
+        </div>
+      </div>
+    </div>
+      <div class="container" id="info">
+        <div class="row">
+          <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+          <div class="col-lg-2 col-sm-4 col-xs-6" id="code">
+            <a href="http://www.github.com/insrt"><h1>code</h1></a>
+          </div>
+          <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+          <div class="col-lg-2 col-sm-4 col-xs-6" id="social">
+            <a href="#" id="socialid"><h1>social</h1></a>
+            <script type="text/javascript">
+              $(document).ready(function(){
+                $('#socialid').click(function(){
+                  $('#code').html('<a href="" id=restore><h1>&larr;</h1></a>');
+                  $('#social').html('<a href="mailto:willrobinsn@gmail.com"><h1>email</h1></a>');
+                  $('#blog').html('<a href="https://www.twitter.com/willrobinsn"><h1>twitter</h1></a>');
+                  $('#resume').html('<a href="http://www.instagram.com/will.robinsn"><h1>instagram</h1></a>');
+
+                  return false;
+                });
+              });
+            </script>
+          </div>
+          <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+            <div class="col-lg-2 col-sm-4 col-xs-6" id="resume">
+              <a href="https://www.linkedin.com/in/will-r-a40552138/"><h1>resume</h1></a>
+            </div>
+            <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+          <div class="col-lg-2 col-sm-4 col-xs-6" id="about">
+          <a href="#" id="clear"><h1>about</h1></a>
+          </div>
+          <div class="col-lg-5 col-sm-4 col-xs-3"></div>
+        </div>
+      </div>
+      <!-- <a href="#" id=clear>test</a>
+      <a href='#' id='restore'>back</a> -->
+      <script type=text/javascript>
+        var div_copy=$("#info").clone()
+        $('#clear').click(function(){
+            $('#info').html("<h1>Hi</h1><br><h3>My name is Will Robinson. I attend Texas A&M University where I'm pursuing an undergraduate in Applied Math with an Emphasis in Statistics. In my free time, I row on the Crew team at Texas A&M, work out, and read.<br><a href='' id=restore><h1>&larr;</h1></a>")
+        });
+        $('#restore').click(function(){
+          $('#info').html(div_copy)
+        });
+    </script>
+  </body>
+</html>

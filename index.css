@@ -1,0 +1,62 @@
+body{
+    font-family: 'Avenir', Arial;
+  }
+  
+  #code, #social, #resume{
+    border-bottom: solid 1px black;
+    text-align: center;
+  }
+  
+  #about{
+    text-align: center;
+  }
+  
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  
+  a:hover{
+    text-decoration:none;
+  }
+  
+  a:focus{
+    text-decoration: none;
+    color: black;
+  }
+  
+  #info{
+    margin-top: 10%;
+  }
+  
+  #name{
+    margin-left: 5%;
+  }
+  
+  /* xs < 768 */
+  @media screen and (max-width: 767px) {
+      body {
+          font-size: 0.9em;
+      }
+  }
+  
+  /* sm */
+  @media screen and (min-width: 768px) {
+      body {
+          font-size: 1em;
+      }
+  }
+  
+  /* md */
+  @media screen and (min-width: 992px) {
+      body {
+          font-size: 1.2em;
+      }
+  }
+  
+  /* lg */
+  @media screen and (min-width: 1200px) {
+      body {
+          font-size: 1.3em;
+      }
+  }
